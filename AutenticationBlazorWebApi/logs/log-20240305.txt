@@ -1,0 +1,701 @@
+2024-03-05 00:11:13.405 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:11:13.436 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:11:13.439 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:11:13.441 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:11:13.441 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:12:33.719 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:12:33.746 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:12:33.755 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:12:33.757 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:12:33.757 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:13:38.999 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:13:39.031 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:13:39.034 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:13:39.035 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:13:39.036 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:14:12.072 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:14:12.102 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:14:12.105 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:14:12.106 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:14:12.107 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:15:24.636 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:15:24.662 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:15:24.665 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:15:24.665 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:15:24.666 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:16:30.441 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:16:30.467 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:16:30.471 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:16:30.473 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:16:30.473 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:23:58.057 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:23:58.087 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:23:58.091 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:23:58.093 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:23:58.093 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:24:23.756 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:24:23.792 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:24:23.795 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:24:23.797 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:24:23.797 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:25:33.473 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:25:33.501 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:25:33.505 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:25:33.507 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:25:33.508 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:26:07.549 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:26:07.578 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:26:07.582 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:26:07.584 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:26:07.584 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:26:58.731 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:26:58.775 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:26:58.779 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:26:58.781 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:26:58.783 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:27:13.029 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:27:13.058 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:27:13.062 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:27:13.063 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:27:13.063 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:27:29.084 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:27:29.113 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:27:29.118 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:27:29.119 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:27:29.119 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:28:22.721 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:28:22.751 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:28:22.755 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:28:22.757 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:28:22.757 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:30:35.843 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:30:35.874 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:30:35.879 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:30:35.880 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:30:35.880 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:34:53.222 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:34:53.247 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:34:53.251 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:34:53.251 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:34:53.252 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:37:57.696 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:37:57.724 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:37:57.728 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:37:57.729 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:37:57.729 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 00:39:01.200 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 00:39:01.227 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 00:39:01.230 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 00:39:01.232 -05:00 [INF] Hosting environment: Development
+2024-03-05 00:39:01.233 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:25:39.133 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:25:39.159 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:25:39.163 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:25:39.164 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:25:39.165 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:26:32.024 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:26:32.050 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:26:32.053 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:26:32.054 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:26:32.055 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:34:47.625 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:34:47.657 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:34:47.660 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:34:47.661 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:34:47.661 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:38:40.784 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:38:40.811 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:38:40.813 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:38:40.814 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:38:40.815 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:40:09.975 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:40:10.001 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:40:10.004 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:40:10.006 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:40:10.006 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:40:46.203 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:40:46.229 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:40:46.232 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:40:46.233 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:40:46.234 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:41:40.811 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:41:40.841 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:41:40.843 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:41:40.844 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:41:40.845 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:43:35.910 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:43:35.935 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:43:35.938 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:43:35.939 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:43:35.939 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:44:24.049 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:44:24.076 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:44:24.078 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:44:24.080 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:44:24.080 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:45:02.757 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:45:02.783 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:45:02.786 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:45:02.787 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:45:02.788 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:46:05.719 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:46:05.746 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:46:05.749 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:46:05.749 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:46:05.750 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:47:39.719 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:47:39.747 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:47:39.750 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:47:39.751 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:47:39.751 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:49:59.520 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:49:59.552 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:49:59.555 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:49:59.556 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:49:59.556 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:51:07.032 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:51:07.063 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:51:07.067 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:51:07.068 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:51:07.068 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:51:34.031 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:51:34.060 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:51:34.063 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:51:34.065 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:51:34.066 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:51:50.354 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:51:50.382 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:51:50.385 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:51:50.385 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:51:50.386 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:52:11.065 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:52:11.094 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:52:11.097 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:52:11.098 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:52:11.099 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:52:42.636 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:52:42.662 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:52:42.664 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:52:42.664 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:52:42.665 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:53:04.412 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:53:04.440 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:53:04.443 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:53:04.445 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:53:04.446 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:53:20.411 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:53:20.437 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:53:20.440 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:53:20.441 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:53:20.442 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:53:33.483 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:53:33.508 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:53:33.511 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:53:33.512 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:53:33.512 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:54:50.510 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:54:50.534 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:54:50.537 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:54:50.538 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:54:50.538 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:57:29.430 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:57:29.454 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:57:29.457 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:57:29.458 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:57:29.458 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:57:55.551 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:57:55.577 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:57:55.580 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:57:55.581 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:57:55.582 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:58:07.540 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:58:07.565 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:58:07.569 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:58:07.569 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:58:07.570 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:58:32.734 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:58:32.761 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:58:32.765 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:58:32.766 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:58:32.767 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:59:04.187 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:59:04.213 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:59:04.216 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:59:04.217 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:59:04.217 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:59:15.205 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:59:15.231 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:59:15.234 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:59:15.235 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:59:15.236 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:59:27.696 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:59:27.722 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:59:27.725 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:59:27.726 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:59:27.726 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:59:39.457 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:59:39.482 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:59:39.485 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:59:39.486 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:59:39.486 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 01:59:49.076 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 01:59:49.102 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 01:59:49.105 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 01:59:49.105 -05:00 [INF] Hosting environment: Development
+2024-03-05 01:59:49.106 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:00:27.928 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:00:27.953 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:00:27.957 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:00:27.958 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:00:27.958 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:07:22.990 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:07:23.017 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:07:23.020 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:07:23.021 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:07:23.021 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:11:42.885 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:11:42.911 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:11:42.914 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:11:42.915 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:11:42.915 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:13:14.802 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:13:14.827 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:13:14.830 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:13:14.831 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:13:14.832 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:13:28.388 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:13:28.419 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:13:28.422 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:13:28.423 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:13:28.424 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:15:31.893 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:15:31.923 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:15:31.926 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:15:31.927 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:15:31.927 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:18:41.726 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:18:41.751 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:18:41.754 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:18:41.755 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:18:41.756 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:20:20.924 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:20:20.952 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:20:20.956 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:20:20.958 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:20:20.958 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:20:36.008 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:20:36.035 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:20:36.039 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:20:36.041 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:20:36.042 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:32:21.303 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:32:21.330 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:32:21.334 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:32:21.335 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:32:21.336 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:33:09.808 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:33:09.836 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:33:09.840 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:33:09.841 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:33:09.841 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:34:03.427 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:34:03.459 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:34:03.463 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:34:03.464 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:34:03.465 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:35:28.667 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:35:28.693 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:35:28.696 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:35:28.696 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:35:28.697 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:42:15.762 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:42:15.791 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:42:15.795 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:42:15.796 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:42:15.796 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:43:08.400 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:43:08.430 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:43:08.435 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:43:08.436 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:43:08.436 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:43:14.587 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 02:43:17.949 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 4660.1919 ms
+2024-03-05 02:43:23.023 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 923.3280 ms
+2024-03-05 02:43:50.273 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:43:50.303 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:43:50.306 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:43:50.306 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:43:50.307 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:45:39.870 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:45:39.928 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:45:39.932 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:45:39.932 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:45:39.933 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:46:04.406 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 02:46:05.533 -05:00 [WRN] User with email user1@example.com was not found. Or incorrect password
+2024-03-05 02:46:05.547 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 1466.1406 ms
+2024-03-05 02:52:49.963 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:52:49.988 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:52:49.991 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:52:49.992 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:52:49.992 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:52:58.962 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 02:53:00.501 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 02:53:00.518 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 1911.5709 ms
+2024-03-05 02:53:38.673 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:53:38.700 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:53:38.703 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:53:38.703 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:53:38.704 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:53:44.410 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 02:53:45.971 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 02:53:45.989 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 1929.3914 ms
+2024-03-05 02:57:13.785 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 02:57:13.810 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 02:57:13.813 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 02:57:13.814 -05:00 [INF] Hosting environment: Development
+2024-03-05 02:57:13.815 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 02:57:24.498 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 02:57:25.937 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 02:57:25.952 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 1770.8045 ms
+2024-03-05 03:00:09.152 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 03:00:09.179 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 03:00:09.182 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 03:00:09.184 -05:00 [INF] Hosting environment: Development
+2024-03-05 03:00:09.185 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 03:00:16.096 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:00:17.547 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:00:17.564 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 1783.6743 ms
+2024-03-05 03:01:27.564 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 03:01:27.590 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 03:01:27.593 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 03:01:27.594 -05:00 [INF] Hosting environment: Development
+2024-03-05 03:01:27.594 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 03:01:32.691 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:01:34.396 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:01:34.416 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 2065.2201 ms
+2024-03-05 03:05:10.937 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:05:11.078 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:05:11.080 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 148.3102 ms
+2024-03-05 03:05:14.949 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:05:15.032 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:05:15.033 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 93.1692 ms
+2024-03-05 03:05:17.595 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 15.7180 ms
+2024-03-05 03:05:19.444 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.9669 ms
+2024-03-05 03:05:20.876 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.9571 ms
+2024-03-05 03:05:21.876 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 1.3117 ms
+2024-03-05 03:05:24.364 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:05:24.434 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:05:24.435 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 72.1476 ms
+2024-03-05 03:05:26.052 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:05:26.542 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 490.4045 ms
+2024-03-05 03:05:30.149 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 547.4607 ms
+2024-03-05 03:05:37.350 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.7201 ms
+2024-03-05 03:05:44.499 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.6482 ms
+2024-03-05 03:05:48.165 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.5656 ms
+2024-03-05 03:05:50.044 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.8025 ms
+2024-03-05 03:05:52.075 -05:00 [INF] HTTP POST /api/Account/login responded 400 in 0.6689 ms
+2024-03-05 03:06:17.392 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-05 03:06:17.466 -05:00 [WRN] Usuario con email user@example.com o contraseña incorrecta
+2024-03-05 03:06:17.468 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 77.3320 ms
+2024-03-05 03:06:21.340 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-05 03:06:21.410 -05:00 [WRN] Usuario con email user@example.com o contraseña incorrecta
+2024-03-05 03:06:21.412 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 72.5455 ms
+2024-03-05 03:06:23.084 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-05 03:06:23.153 -05:00 [WRN] Usuario con email user@example.com o contraseña incorrecta
+2024-03-05 03:06:23.155 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.7848 ms
+2024-03-05 03:06:24.468 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-05 03:06:24.538 -05:00 [WRN] Usuario con email user@example.com o contraseña incorrecta
+2024-03-05 03:06:24.539 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.1584 ms
+2024-03-05 03:06:28.915 -05:00 [INF] LogIn Attempt for user@examd
+2024-03-05 03:06:28.917 -05:00 [WRN] Usuario con email user@examd o contraseña incorrecta
+2024-03-05 03:06:28.918 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 3.3170 ms
+2024-03-05 03:06:33.891 -05:00 [INF] LogIn Attempt for user@examds
+2024-03-05 03:06:33.894 -05:00 [WRN] Usuario con email user@examds o contraseña incorrecta
+2024-03-05 03:06:33.895 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 4.2495 ms
+2024-03-05 03:06:34.739 -05:00 [INF] LogIn Attempt for user@examds
+2024-03-05 03:06:34.742 -05:00 [WRN] Usuario con email user@examds o contraseña incorrecta
+2024-03-05 03:06:34.744 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 5.0742 ms
+2024-03-05 03:06:46.072 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:46.146 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:46.148 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 76.0196 ms
+2024-03-05 03:06:51.415 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:51.487 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:51.490 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 75.0790 ms
+2024-03-05 03:06:52.941 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:53.010 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:53.012 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.3474 ms
+2024-03-05 03:06:53.443 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:53.513 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:53.515 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 73.1061 ms
+2024-03-05 03:06:53.707 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:53.777 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:53.780 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 73.2005 ms
+2024-03-05 03:06:53.882 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:53.952 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:53.954 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.9403 ms
+2024-03-05 03:06:54.203 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:54.273 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:54.275 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 72.2646 ms
+2024-03-05 03:06:54.482 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:06:54.552 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:06:54.553 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 70.7898 ms
+2024-03-05 03:08:06.686 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 03:08:06.714 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 03:08:06.717 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 03:08:06.718 -05:00 [INF] Hosting environment: Development
+2024-03-05 03:08:06.719 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 03:08:13.163 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:08:14.788 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:08:14.816 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 2010.4101 ms
+2024-03-05 03:08:17.459 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:08:17.591 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:08:17.593 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 139.1147 ms
+2024-03-05 03:10:49.261 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:10:49.349 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:10:49.350 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 100.0483 ms
+2024-03-05 03:10:51.164 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:10:51.235 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:10:51.237 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 73.8060 ms
+2024-03-05 03:11:13.820 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:11:13.894 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:11:13.896 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 76.3001 ms
+2024-03-05 03:11:15.579 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:11:15.648 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:11:15.650 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.5629 ms
+2024-03-05 03:11:29.559 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:11:29.629 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:11:29.630 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.4878 ms
+2024-03-05 03:11:31.154 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 03:11:31.224 -05:00 [WRN] Usuario con email user1@example.com o contraseña incorrecta
+2024-03-05 03:11:31.225 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 71.0887 ms
+2024-03-05 11:18:11.860 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:18:11.889 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:18:11.891 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:18:11.892 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:18:11.893 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:19:24.062 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:19:24.087 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:19:24.090 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:19:24.091 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:19:24.092 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:19:42.192 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:19:42.217 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:19:42.221 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:19:42.221 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:19:42.222 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:20:08.961 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:20:08.986 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:20:08.989 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:20:08.989 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:20:08.990 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:20:50.579 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:20:50.604 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:20:50.607 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:20:50.608 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:20:50.608 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:21:07.425 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 11:21:09.922 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 3736.7537 ms
+2024-03-05 11:21:16.881 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 721.7551 ms
+2024-03-05 11:23:12.121 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:23:12.148 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:23:12.151 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:23:12.152 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:23:12.153 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:25:42.586 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 587.1743 ms
+2024-03-05 11:41:17.148 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:41:17.173 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:41:17.175 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:41:17.176 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:41:17.177 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 11:41:34.334 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 11:41:36.214 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 2226.9102 ms
+2024-03-05 11:41:43.755 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 537.7889 ms
+2024-03-05 11:57:09.346 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 11:57:09.381 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 11:57:09.383 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 11:57:09.383 -05:00 [INF] Hosting environment: Development
+2024-03-05 11:57:09.384 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 12:04:29.144 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 12:04:29.169 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 12:04:29.172 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 12:04:29.173 -05:00 [INF] Hosting environment: Development
+2024-03-05 12:04:29.173 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 12:27:03.487 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 12:27:03.513 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 12:27:03.516 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 12:27:03.517 -05:00 [INF] Hosting environment: Development
+2024-03-05 12:27:03.517 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 12:27:28.059 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 12:27:30.566 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 3700.3493 ms
+2024-03-05 12:27:34.065 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 691.8340 ms
+2024-03-05 12:28:21.355 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 12:28:21.380 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 12:28:21.383 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 12:28:21.383 -05:00 [INF] Hosting environment: Development
+2024-03-05 12:28:21.384 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 12:29:02.997 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-05 12:29:04.853 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 2188.4645 ms
+2024-03-05 12:29:08.676 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 538.3065 ms
+2024-03-05 13:39:35.320 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 13:39:35.357 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 13:39:35.359 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 13:39:35.359 -05:00 [INF] Hosting environment: Development
+2024-03-05 13:39:35.360 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:26:10.515 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:26:10.540 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:26:10.542 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:26:10.543 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:26:10.543 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:26:17.789 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:26:17.815 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:26:17.818 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:26:17.818 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:26:17.819 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:27:24.388 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:27:24.428 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:27:24.431 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:27:24.432 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:27:24.432 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:30:08.252 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:30:08.277 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:30:08.280 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:30:08.280 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:30:08.281 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:30:52.355 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:30:52.378 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:30:52.381 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:30:52.381 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:30:52.382 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:33:47.958 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:33:47.984 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:33:47.986 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:33:47.987 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:33:47.988 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:49:06.944 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:49:06.969 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:49:06.971 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:49:06.971 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:49:06.973 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:52:35.566 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:52:35.593 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:52:35.595 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:52:35.596 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:52:35.597 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:57:12.003 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:57:12.035 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:57:12.040 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:57:12.041 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:57:12.041 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:57:47.137 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:57:47.162 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:57:47.166 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:57:47.167 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:57:47.167 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 14:59:03.830 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 14:59:03.855 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 14:59:03.858 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 14:59:03.859 -05:00 [INF] Hosting environment: Development
+2024-03-05 14:59:03.860 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:22:37.138 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:22:37.166 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:22:37.169 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:22:37.170 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:22:37.170 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:28:10.323 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:28:10.349 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:28:10.352 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:28:10.353 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:28:10.354 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:28:40.219 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:28:40.243 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:28:40.246 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:28:40.247 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:28:40.247 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:29:21.081 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:29:21.106 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:29:21.109 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:29:21.109 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:29:21.110 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:30:36.267 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:30:36.292 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:30:36.295 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:30:36.296 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:30:36.296 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:31:10.838 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:31:10.866 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:31:10.868 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:31:10.869 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:31:10.869 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:31:53.080 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:31:53.107 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:31:53.108 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:31:53.109 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:31:53.110 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:32:58.203 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:32:58.229 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:32:58.231 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:32:58.231 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:32:58.232 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:33:27.823 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:33:27.860 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:33:27.862 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:33:27.863 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:33:27.863 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:33:41.889 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:33:41.917 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:33:41.919 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:33:41.919 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:33:41.920 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:33:53.448 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:33:53.480 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:33:53.482 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:33:53.483 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:33:53.484 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:34:11.461 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:34:11.486 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:34:11.489 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:34:11.490 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:34:11.490 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:34:19.095 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:34:19.136 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:34:19.139 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:34:19.140 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:34:19.140 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:34:58.793 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:34:58.816 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:34:58.819 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:34:58.820 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:34:58.820 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:35:29.096 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:35:29.121 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:35:29.124 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:35:29.125 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:35:29.125 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:39:08.793 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:39:08.818 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:39:08.821 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:39:08.821 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:39:08.822 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:40:53.691 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:40:53.716 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:40:53.719 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:40:53.720 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:40:53.721 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:49:23.382 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:49:23.406 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:49:23.408 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:49:23.409 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:49:23.410 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:50:54.633 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:50:54.659 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:50:54.662 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:50:54.662 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:50:54.663 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:58:07.390 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-05 15:58:07.415 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-05 15:58:07.418 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-05 15:58:07.418 -05:00 [INF] Hosting environment: Development
+2024-03-05 15:58:07.419 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-05 15:58:49.413 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-05 15:58:51.946 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 3727.5129 ms

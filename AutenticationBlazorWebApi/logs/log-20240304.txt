@@ -1,0 +1,436 @@
+2024-03-04 17:43:00.224 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 17:43:00.252 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 17:43:00.255 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 17:43:00.256 -05:00 [INF] Hosting environment: Development
+2024-03-04 17:43:00.257 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 17:43:16.073 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-04 17:43:17.652 -05:00 [ERR] HTTP POST /api/Account/login responded 500 in 1863.6977 ms
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-04 17:43:17.676 -05:00 [ERR] Something Went Wrong in the /api/Account/login
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '208' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Program.cs:line 141
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AutenticationBlazorWebApi.Server.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Middleware\ExceptionMiddleware.cs:line 22
+2024-03-04 17:44:54.911 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 17:44:54.937 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 17:44:54.939 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 17:44:54.939 -05:00 [INF] Hosting environment: Development
+2024-03-04 17:44:54.940 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 17:45:08.053 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-04 17:45:09.634 -05:00 [ERR] HTTP POST /api/Account/login responded 500 in 2608.7449 ms
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '248' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-04 17:45:09.652 -05:00 [ERR] Something Went Wrong in the /api/Account/login
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '248' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Program.cs:line 141
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AutenticationBlazorWebApi.Server.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Middleware\ExceptionMiddleware.cs:line 22
+2024-03-04 17:46:02.441 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-04 17:46:02.588 -05:00 [ERR] HTTP POST /api/Account/login responded 500 in 151.4409 ms
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '248' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-04 17:46:02.598 -05:00 [ERR] Something Went Wrong in the /api/Account/login
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '248' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.GenerateToken() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 157
+   at AutenticationBlazorWebApi.Server.Authentication.AuthManager.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Authentication\AuthManager.cs:line 76
+   at AutenticationBlazorWebApi.Server.Controllers.AccountController.Login(LoginDto loginDto) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Controllers\AccountController.cs:line 51
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Program.cs:line 141
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AutenticationBlazorWebApi.Server.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi\Middleware\ExceptionMiddleware.cs:line 22
+2024-03-04 17:46:49.821 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 17:46:49.846 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 17:46:49.849 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 17:46:49.849 -05:00 [INF] Hosting environment: Development
+2024-03-04 17:46:49.850 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 17:47:00.322 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-04 17:47:02.018 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 2610.2296 ms
+2024-03-04 17:47:13.176 -05:00 [INF] LogIn Attempt for user1@example.com
+2024-03-04 17:47:13.321 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 151.1116 ms
+2024-03-04 17:47:45.094 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 754.2470 ms
+2024-03-04 17:48:44.960 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 17:48:44.984 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 17:48:44.986 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 17:48:44.987 -05:00 [INF] Hosting environment: Development
+2024-03-04 17:48:44.987 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 17:48:45.632 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 401 in 18.5238 ms
+2024-03-04 17:48:47.840 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 401 in 2.6407 ms
+2024-03-04 17:49:06.099 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 401 in 1.3350 ms
+2024-03-04 17:52:50.473 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 401 in 0.1688 ms
+2024-03-04 18:05:47.334 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:05:47.360 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:05:47.363 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:05:47.364 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:05:47.364 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:11:31.796 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:11:31.821 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:11:31.823 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:11:31.824 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:11:31.824 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:25:32.619 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:25:32.644 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:25:32.647 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:25:32.647 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:25:32.648 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:26:05.350 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:26:05.375 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:26:05.379 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:26:05.379 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:26:05.380 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:28:13.026 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:28:13.051 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:28:13.055 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:28:13.056 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:28:13.057 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:29:24.059 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:29:24.083 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:29:24.085 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:29:24.085 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:29:24.086 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:39:24.157 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:39:24.183 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:39:24.186 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:39:24.187 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:39:24.188 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:40:21.205 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:40:21.231 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:40:21.233 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:40:21.233 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:40:21.234 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:41:36.786 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:41:36.809 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:41:36.811 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:41:36.812 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:41:36.813 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:42:58.078 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:42:58.103 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:42:58.106 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:42:58.106 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:42:58.107 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:44:33.715 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:44:33.741 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:44:33.744 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:44:33.744 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:44:33.745 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:45:18.834 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:45:18.860 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:45:18.863 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:45:18.863 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:45:18.864 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:46:07.862 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:46:07.886 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:46:07.889 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:46:07.889 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:46:07.890 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:46:28.482 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:46:28.509 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:46:28.513 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:46:28.514 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:46:28.515 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:48:22.000 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:48:22.023 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:48:22.026 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:48:22.027 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:48:22.027 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:49:32.573 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:49:32.600 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:49:32.603 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:49:32.604 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:49:32.604 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:50:57.454 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:50:57.479 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:50:57.482 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:50:57.483 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:50:57.484 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:52:06.559 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:52:06.586 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:52:06.588 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:52:06.589 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:52:06.590 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:52:36.804 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:52:36.828 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:52:36.831 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:52:36.832 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:52:36.832 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:54:41.497 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:54:41.522 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:54:41.525 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:54:41.525 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:54:41.526 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 18:59:17.993 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 18:59:18.017 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 18:59:18.019 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 18:59:18.020 -05:00 [INF] Hosting environment: Development
+2024-03-04 18:59:18.021 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 19:49:41.087 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 19:49:41.112 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 19:49:41.114 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 19:49:41.115 -05:00 [INF] Hosting environment: Development
+2024-03-04 19:49:41.115 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 19:50:50.897 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 19:50:50.921 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 19:50:50.924 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 19:50:50.925 -05:00 [INF] Hosting environment: Development
+2024-03-04 19:50:50.926 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 19:54:18.727 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 19:54:18.753 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 19:54:18.756 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 19:54:18.756 -05:00 [INF] Hosting environment: Development
+2024-03-04 19:54:18.757 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:04:12.292 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:04:12.320 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:04:12.324 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:04:12.325 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:04:12.325 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:04:49.211 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:04:49.240 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:04:49.243 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:04:49.244 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:04:49.244 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:05:15.979 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:05:16.003 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:05:16.006 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:05:16.007 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:05:16.008 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:07:13.520 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:07:13.546 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:07:13.549 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:07:13.550 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:07:13.551 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:11:05.055 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:11:05.079 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:11:05.083 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:11:05.084 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:11:05.084 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:11:29.361 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:11:29.386 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:11:29.389 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:11:29.389 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:11:29.390 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:11:58.668 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:11:58.699 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:11:58.701 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:11:58.702 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:11:58.703 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:13:30.817 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:13:30.842 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:13:30.844 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:13:30.845 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:13:30.846 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:22:34.401 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:22:34.440 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:22:34.443 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:22:34.444 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:22:34.445 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:27:58.665 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:27:58.691 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:27:58.694 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:27:58.695 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:27:58.695 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:29:36.148 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:29:36.175 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:29:36.179 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:29:36.180 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:29:36.180 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:31:32.519 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:31:32.547 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:31:32.551 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:31:32.551 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:31:32.552 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:32:15.209 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:32:15.236 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:32:15.240 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:32:15.242 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:32:15.243 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:40:29.192 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:40:29.218 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:40:29.221 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:40:29.223 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:40:29.234 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:42:20.535 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:42:20.560 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:42:20.562 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:42:20.563 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:42:20.563 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:43:09.242 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:43:09.267 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:43:09.271 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:43:09.271 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:43:09.272 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:43:48.919 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:43:48.945 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:43:48.948 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:43:48.949 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:43:48.950 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:51:17.954 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:51:17.987 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:51:17.989 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:51:17.990 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:51:17.990 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:52:47.720 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:52:47.748 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:52:47.751 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:52:47.751 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:52:47.752 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 20:55:34.517 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 20:55:34.543 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 20:55:34.546 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 20:55:34.547 -05:00 [INF] Hosting environment: Development
+2024-03-04 20:55:34.549 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 21:06:35.110 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 21:06:35.135 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 21:06:35.138 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 21:06:35.139 -05:00 [INF] Hosting environment: Development
+2024-03-04 21:06:35.139 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-04 21:07:11.483 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-04 21:07:11.518 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-04 21:07:11.521 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-04 21:07:11.522 -05:00 [INF] Hosting environment: Development
+2024-03-04 21:07:11.522 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi

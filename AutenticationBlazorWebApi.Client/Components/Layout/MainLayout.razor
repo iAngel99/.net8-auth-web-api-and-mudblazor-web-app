@@ -1,0 +1,81 @@
+﻿@inherits LayoutComponentBase
+
+
+<div class="page">
+    <main>
+        <div class="top-row">
+            <MudThemeProvider />
+            <MudDialogProvider />
+            <MudSnackbarProvider />
+        </div>
+
+        <MudLayout>
+            <MudAppBar Elevation="1">
+                <MudIconButton Icon="@(_drawerOpen? Icons.Material.Filled.MenuOpen:Icons.Material.Filled.Menu)"
+                               Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                <a class="navbar-brand" href="">
+                    Hi,
+                    <AuthorizeView>
+                        <Authorized>@context.User.Identity!.Name</Authorized>
+                        <NotAuthorized>Guest</NotAuthorized>
+                    </AuthorizeView>
+                </a>
+                <MudSpacer />
+                <AuthorizeView>
+                    <Authorized>
+                        <MudMenu TransformOrigin="Origin.TopCenter" AnchorOrigin="Origin.BottomCenter" ActivationEvent="@MouseEvent.MouseOver" Size="Size.Large"
+                                 Class="mx-11">
+                            <ActivatorContent>
+                                <MudAvatar Image="images/avatar96.webp" Size="Size.Medium" Class="bg-transparent" />
+                            </ActivatorContent>
+                            <ChildContent>
+                                <MudMenuItem Icon="@Icons.Material.Outlined.ManageAccounts" IconColor="Color.Primary"
+                                             Class="text-start custom-icon-width">
+                                    Perfil
+                                </MudMenuItem>
+                                <MudMenuItem Icon="@Icons.Material.Outlined.Logout" IconColor="Color.Error" Class="text-start custom-icon-width"
+                                             OnClick="@(() => LogoutClicked())" >
+                                    Cerrar
+                                    Sesión
+                                </MudMenuItem>
+                            </ChildContent>
+                        </MudMenu>
+                    </Authorized>
+                    <NotAuthorized>
+                        <MudIconButton Class="m-2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/login">Login</MudIconButton>
+                        <MudIconButton Class="m-2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/register">Register</MudIconButton>
+                    </NotAuthorized>
+                </AuthorizeView>
+            </MudAppBar>
+            <MudDrawer @bind-Open="@_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+                <NavMenu />
+            </MudDrawer>
+            <MudMainContent>
+                <article class="content px-4">
+                    @Body
+                </article>
+                <ConsentCookies />
+            </MudMainContent>
+        </MudLayout>
+
+    </main>
+</div>
+
+@code {
+
+    async Task LogoutClicked()
+    {
+        var logoutModel = new AuthResponseDto();
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(logoutModel);
+        NavManager.NavigateTo("/", forceLoad: true);
+    }
+
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+}

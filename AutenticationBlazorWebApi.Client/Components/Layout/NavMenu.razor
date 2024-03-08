@@ -1,0 +1,21 @@
+﻿
+<MudList Clickable="true">
+    <MudListItem Button="true" Href="/">
+        <MudIcon Icon="@Icons.Material.Filled.Home" />
+        Home
+    </MudListItem>
+    <MudListItem Button="true" Href="counter">
+        <MudIcon Icon="@Icons.Material.Filled.Add" />
+        Counter
+    </MudListItem>
+    <AuthorizeView>
+        <Authorized>
+            <MudListItem Button="true" Href="weather">
+                <MudIcon Icon="@Icons.Material.Filled.List" />
+                Weather
+            </MudListItem>
+        </Authorized>
+    </AuthorizeView>
+</MudList>
+
+

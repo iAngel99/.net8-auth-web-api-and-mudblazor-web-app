@@ -1,0 +1,9 @@
+﻿<MudDialog IsOpen="@IsOpen" @ref="dialogRef" IsVisible="IsOpen" Options="new DialogOptions{DisableBackdropClick = true}" MaxWidth="MaxWidth.Small">
+    <DialogContent>
+        <MudText Typo="Typo.h4" Align="Align.Center">Uso de cookies</MudText>
+        <MudText>Este sitio utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas su uso.</MudText>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Primary" OnClick="AcceptCookies">Aceptar</MudButton>
+    </DialogActions>
+</MudDialog>

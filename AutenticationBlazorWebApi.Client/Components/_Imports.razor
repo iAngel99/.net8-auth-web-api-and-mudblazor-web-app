@@ -1,0 +1,28 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using static Microsoft.AspNetCore.Components.Web.RenderMode
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+@using AutenticationBlazorWebApi.Client
+@using AutenticationBlazorWebApi.Client.Components
+
+@using AutenticationBlazorWebApi.Models.DTOs
+@using AutenticationBlazorWebApi.Client.Helpers
+@using AutenticationBlazorWebApi.Client.Services.Contracts
+@using Microsoft.AspNetCore.Components.Authorization
+@using Client.Services.Contracts
+
+@using AutenticationBlazorWebApi.Client.Components.Layout
+@using AutenticationBlazorWebApi.Client.Components.Pages.ComponentsPages
+@using MudBlazor
+
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IUserAccountService AccountService
+@inject IWeatherForecastService WeatherForecastService
+@inject NavigationManager NavManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime

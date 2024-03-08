@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+<div class="page">
+    <main>
+        <div class="top-row">
+            <MudThemeProvider />
+            <MudDialogProvider />
+        </div>
+        <MudLayout>
+            <MudMainContent Class="authBody">
+                
+                    @Body
+                
+                <ConsentCookies />
+            </MudMainContent>
+
+        </MudLayout>
+    </main>
+</div>

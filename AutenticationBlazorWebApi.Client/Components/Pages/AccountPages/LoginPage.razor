@@ -1,0 +1,56 @@
+﻿@page "/identity/account/login"
+@layout AuthenticationLayout
+
+<div class="centered-container">
+    <div class="container-color">
+        <EditForm Model="@User" OnValidSubmit="HandleLogin">
+            <MudCard Class="mudContainer" Elevation="100">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <div class="d-flex flex-column align-items-center">
+                            <MudText Typo="Typo.h4" Class="mb-3">Log In</MudText>
+                            <MudImage Src="/logos/login.webp" Alt="Login Icon" Elevation="25" Class="rounded-lg" Style="width: 75px; height: 75px;" />
+                        </div>
+                    </CardHeaderContent>
+                </MudCardHeader>
+
+                <MudCardContent>
+                    <MudTextField Label="Email" @bind-Value="User.Email" Class="mt-3" Required="true" RequiredError="Requerido">
+                    </MudTextField>
+                    <MudTextField Label="Contraseña" @bind-Value="User.Password" InputType="InputType.Password" Class="mt-3" 
+                                  Required="true" RequiredError="Requerido">
+                    </MudTextField>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudText Align="Align.Center" Class="mb-2">
+                        Don't have an account?
+                        <MudLink Href="/identity/account/register">Sign Up </MudLink>
+                    </MudText>
+                    <MudSpacer />
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary"
+                               Class="mt-auto" Style="border-radius: 10%;">Submit</MudButton>
+                </MudCardActions>
+            @if (Errors.Length > 0)
+            {
+                <MudAlert Severity="Severity.Error">@Errors</MudAlert>
+            }
+            </MudCard>
+        </EditForm>
+    </div>
+</div>
+@if (IsLoading)
+{
+    <div class="Myoverlay">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+}
+
