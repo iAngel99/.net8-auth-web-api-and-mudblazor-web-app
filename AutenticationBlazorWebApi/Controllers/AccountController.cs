@@ -23,7 +23,7 @@ namespace AutenticationBlazorWebApi.Server.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult> Register([FromBody] UserDto userDto)
+        public async Task<ActionResult> Register([FromBody] RegisterDto userDto)
         {
             _logger.LogInformation($"Registration Attempt for {userDto.Email}");
             var response = await _authManager.Register(userDto);

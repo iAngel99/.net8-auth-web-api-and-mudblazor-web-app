@@ -9,7 +9,7 @@
     padding: 0 !important;
 }
 .mudContainer {
-    background-color: rgba(170, 170, 181, 0.75) !important;
+    background-color: rgba(30, 30, 45, 0.80) !important;
     border-radius: 3% !important;
 
 }
@@ -26,8 +26,35 @@
 .container-color {
     background-color: transparent;
     border-radius: 3%;
-    width: 35%;
+    width: 30%;
     min-width: max-content;
     max-height: 100vh; /* Asegura que el contenedor no exceda la altura de la pantalla */
 }
+
+
+.mud-input-control.whiteLabel > .mud-input-control-input-container > .mud-input-label-inputcontrol {
+    color: white !important;
+}
+
+div.whiteLabel div.mud-input-control-input-container label.mud-input-label.mud-input-label-animated.mud-input-label-text.mud-input-label-inputcontrol {
+    color: white !important;
+}
+
+.cuestion-color {
+    color: white;
+}
+
+.mudLightblue {
+}
+.whiteLabel {
+
+}
+div.mud-card-content.mudLightblue div.mud-input-control.mud-input-input-control div.mud-input-control-input-container div.mud-input.mud-input-underline input.mud-input-slot.mud-input-root {
+    color: lightblue !important;
+}
+
+
+
+
+
 

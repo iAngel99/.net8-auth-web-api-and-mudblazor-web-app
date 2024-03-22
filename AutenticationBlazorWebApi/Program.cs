@@ -3,6 +3,7 @@ using AutenticationBlazorWebApi.Server.Authentication;
 using AutenticationBlazorWebApi.Server.Configurations;
 using AutenticationBlazorWebApi.Server.Data;
 using AutenticationBlazorWebApi.Server.Middleware;
+using AutenticationBlazorWebApi.Server.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.OData;
@@ -23,8 +24,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 
-builder.Services.AddIdentityCore<User>()
-    .AddRoles<IdentityRole>()
+builder.Services.AddIdentityCore<User>().AddRoles<Role>()
     .AddTokenProvider<DataProtectorTokenProvider<User>>("AutenticationWebApi.Server")
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
@@ -81,6 +81,8 @@ builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSet
 
 
 builder.Services.AddScoped<IAuthManager, AuthManager>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddAuthentication(options =>
 {

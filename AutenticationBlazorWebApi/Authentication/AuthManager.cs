@@ -31,7 +31,7 @@ namespace AutenticationBlazorWebApi.Server.Authentication
             _jwtSettings = jwtSettings.Value;
         }
 
-        public async Task<GeneralResponse> Register(UserDto userDto)
+        public async Task<GeneralResponse> Register(RegisterDto userDto)
         {
             var user = _mapper.Map<User>(userDto);
             user.UserName = userDto.Email;
@@ -165,6 +165,7 @@ namespace AutenticationBlazorWebApi.Server.Authentication
             {
                 new Claim(ClaimTypes.NameIdentifier, _user.Id),
                 new Claim(ClaimTypes.Name, _user.FirstName!),
+                new Claim(ClaimTypes.GivenName, _user.LastName!),
                 new Claim(ClaimTypes.Email, _user.Email),
                 // Añade aquí más afirmaciones según sea necesario
             };

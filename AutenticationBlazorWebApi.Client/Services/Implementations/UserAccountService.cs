@@ -16,20 +16,20 @@ namespace AutenticationBlazorWebApi.Client.Services.Implementations
             _gethttpClient = gethttpClient;
         }
 
-        public async Task<GeneralResponse> Register(UserDto userDto)
+        public async Task<GeneralResponse> Register(RegisterDto userDto)
         {
             var httpClient = _gethttpClient.GetPublicHttpClient();
             try
             {
                 var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/register", userDto);
-                if (!result.IsSuccessStatusCode) return new GeneralResponse(false, "Error occured");
+                if (!result.IsSuccessStatusCode) return new GeneralResponse(false, "Ocurrió un error");
 
                 return await result.Content.ReadFromJsonAsync<GeneralResponse>()!;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return new GeneralResponse(false, "Error occured");
+                return new GeneralResponse(false, "Ocurrió un error");
             }
         }
 
@@ -39,13 +39,13 @@ namespace AutenticationBlazorWebApi.Client.Services.Implementations
             try
             {
                 var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/login", loginDto);
-                if (!result.IsSuccessStatusCode) return new LoginResponse(false, "Error occured");
+                if (!result.IsSuccessStatusCode) return new LoginResponse(false, "Ocurrió un error");
                 return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return new LoginResponse(false, "Error occured");
+                return new LoginResponse(false, "Ocurrió un error");
             }
         }
 
@@ -55,14 +55,14 @@ namespace AutenticationBlazorWebApi.Client.Services.Implementations
             try
             {
                 var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/refreshtoken", request);
-                if (!result.IsSuccessStatusCode) return new LoginResponse(false, "Error occured");
+                if (!result.IsSuccessStatusCode) return new LoginResponse(false, "Ocurrió un error");
 
                 return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return new LoginResponse(false, "Error occured");
+                return new LoginResponse(false, "Ocurrió un error");
             }
         }
     }

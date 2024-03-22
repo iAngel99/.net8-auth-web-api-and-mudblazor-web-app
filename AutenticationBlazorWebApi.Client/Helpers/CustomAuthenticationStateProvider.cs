@@ -78,11 +78,12 @@ namespace AutenticationBlazorWebApi.Client.Helpers
             // Extraer las afirmaciones del token
             var userId = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.NameIdentifier);
             var name = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Name);
+            var lastName = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.GivenName);
             var email = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Email);
             var role = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Role);
 
             // Devolver un nuevo objeto CustomUserClaims con las afirmaciones extraídas
-            return new CustomUserClaims(userId!.Value!, name!.Value!, email!.Value!, role!.Value!);
+            return new CustomUserClaims(userId!.Value!, name!.Value!, lastName.Value!, email!.Value!, role!.Value!);
         }
 
         public static ClaimsPrincipal SetClaimPrincipal(CustomUserClaims claims)
@@ -94,6 +95,7 @@ namespace AutenticationBlazorWebApi.Client.Helpers
                     new(ClaimTypes.NameIdentifier, claims.Id),
                     new(ClaimTypes.Name, claims.Name),
                     new(ClaimTypes.Email, claims.Email),
+                    new(ClaimTypes.GivenName,claims.GivenName),
                     new(ClaimTypes.Role, claims.Role)
                 }, "JwtAuth"));
         }

@@ -104,6 +104,11 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
+
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -121,16 +126,20 @@ namespace AutenticationBlazorWebApi.Server.Migrations
 
                     b.ToTable("AspNetRoles", (string)null);
 
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityRole");
+
+                    b.UseTphMappingStrategy();
+
                     b.HasData(
                         new
                         {
-                            Id = "1117bb29-fe30-4e63-a5f2-2d64a42f2279",
+                            Id = "1d37464d-b5e3-4a6e-b277-b5abb1329110",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "08e98865-a76e-4617-84c4-1fc64dc496b4",
+                            Id = "6c09b31e-9d0e-4cb9-ac64-a38571081e04",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -216,11 +225,21 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                     b.Property<string>("RoleId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(34)
+                        .HasColumnType("nvarchar(34)")
+                        .HasDefaultValue("IdentityUserRole<string>");
+
                     b.HasKey("UserId", "RoleId");
 
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUserRole<string>");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -240,6 +259,20 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("AutenticationBlazorWebApi.Models.Role", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
+
+                    b.HasDiscriminator().HasValue("Role");
+                });
+
+            modelBuilder.Entity("AutenticationBlazorWebApi.Models.UserRole", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUserRole<string>");
+
+                    b.HasDiscriminator().HasValue("UserRole");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -276,12 +309,6 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("AutenticationBlazorWebApi.Models.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -291,6 +318,35 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("AutenticationBlazorWebApi.Models.UserRole", b =>
+                {
+                    b.HasOne("AutenticationBlazorWebApi.Models.Role", "Role")
+                        .WithMany("UserRole")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AutenticationBlazorWebApi.Models.User", "User")
+                        .WithMany("UserRole")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AutenticationBlazorWebApi.Models.User", b =>
+                {
+                    b.Navigation("UserRole");
+                });
+
+            modelBuilder.Entity("AutenticationBlazorWebApi.Models.Role", b =>
+                {
+                    b.Navigation("UserRole");
                 });
 #pragma warning restore 612, 618
         }

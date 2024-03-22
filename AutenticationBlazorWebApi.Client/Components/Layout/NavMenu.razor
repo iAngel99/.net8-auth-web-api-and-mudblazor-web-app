@@ -16,6 +16,15 @@
             </MudListItem>
         </Authorized>
     </AuthorizeView>
+    <AuthorizeView Roles="Administrator">
+        <Authorized>
+            <MudListItem Button="true" Href="manageusers">
+                <MudIcon Icon="@Icons.Material.Filled.SupervisedUserCircle" />
+                Gestionar Usuarios
+            </MudListItem>
+        </Authorized>
+    </AuthorizeView>
+
 </MudList>
 
 

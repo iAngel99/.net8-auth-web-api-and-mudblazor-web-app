@@ -471,3 +471,13 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5289: address 
 2024-03-07 20:10:12.489 -05:00 [INF] LogIn Attempt for angelf99@gmail.algo
 2024-03-07 20:10:12.600 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 161.1299 ms
 2024-03-07 20:10:22.939 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 592.1625 ms
+2024-03-07 22:11:44.514 -05:00 [INF] Now listening on: https://localhost:7099
+2024-03-07 22:11:44.554 -05:00 [INF] Now listening on: http://localhost:5289
+2024-03-07 22:11:44.557 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-07 22:11:44.557 -05:00 [INF] Hosting environment: Development
+2024-03-07 22:11:44.558 -05:00 [INF] Content root path: D:\Angel\Proyectos\VS\AutenticationBlazorWebApi\AutenticationBlazorWebApi
+2024-03-07 22:12:18.617 -05:00 [INF] LogIn Attempt for user@example.com
+2024-03-07 22:12:21.270 -05:00 [INF] HTTP POST /api/Account/login responded 200 in 3833.4622 ms
+2024-03-07 22:13:03.445 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 967.5894 ms
+2024-03-07 22:13:28.612 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 69.7338 ms
+2024-03-07 22:19:29.513 -05:00 [INF] HTTP GET /WeatherForecast/WeatherForecast responded 200 in 3.5107 ms

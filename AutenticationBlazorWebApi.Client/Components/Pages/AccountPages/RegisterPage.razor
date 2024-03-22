@@ -10,31 +10,33 @@
                 <MudCardHeader>
                     <CardHeaderContent>
                         <div class="d-flex flex-column align-items-center">
-                            <MudText Typo="Typo.h4" Class="mb-3">Register</MudText>
+                            <MudText Typo="Typo.h4" Class="mb-3" Color="Color.Info">Register</MudText>
                             <MudImage Src="/logos/register.webp" Alt="Login Icon" Elevation="25" Class="rounded-lg" Style="width: 75px; height: 75px;" />
                         </div>
                     </CardHeaderContent>
                 </MudCardHeader>
 
-                <MudCardContent>
-                    <MudTextField Label="Nombre" @bind-Value="User.FirstName" Class="mt-3" 
+                <MudCardContent Class="mudLightblue">
+                    <MudTextField Label="Nombre" @bind-Value="User.FirstName" Class="mt-3 whiteLabel"
                                   For="@(() => User.FirstName)">
                     </MudTextField>
-                    <MudTextField Label="Apellido" @bind-Value="User.LastName" Class="mt-3"
+                    <MudTextField Label="Apellido" @bind-Value="User.LastName" Class="mt-3 whiteLabel"
                                   For="@(() => User.LastName)">
                     </MudTextField>
-                    <MudTextField Label="Email" @bind-Value="User.Email" Class="mt-3"
+                    <MudTextField Label="Email" @bind-Value="User.Email" Class="mt-3 whiteLabel"
                                   For="@(() => User.Email)">
                     </MudTextField>
-                    <MudTextField Label="Contraseña" @bind-Value="User.Password" InputType="InputType.Password" Class="mt-3"
-                                  For="@(() => User.Password)">
+                    <MudTextField Label="Contraseña" @bind-Value="User.Password" Class="mt-3 whiteLabel"
+                                  For="@(() => User.Password)" InputType="@PasswordInput" Adornment="Adornment.End" AdornmentIcon="@PasswordInputIcon"
+                                  OnAdornmentClick="ButtonTestclick" AdornmentAriaLabel="Show Password" AdornmentColor="Color.Info">
                     </MudTextField>
-                    <MudTextField Label="Confirmar Contraseña" @bind-Value="User.ConfirmPassword" Class="mt-3"
-                                  InputType="InputType.Password" For="@(() => User.ConfirmPassword)">
+                    <MudTextField Label="Confirmar Contraseña" @bind-Value="User.ConfirmPassword" Class="mt-3 whiteLabel" Adornment="Adornment.End"
+                                  For="@(() => User.ConfirmPassword)" InputType="@PasswordConfirmInput"  AdornmentIcon="@PasswordConfirmInputIcon" 
+                                  OnAdornmentClick="ButtonShowclick" AdornmentAriaLabel="Show Password" AdornmentColor="Color.Info">
                     </MudTextField>
                 </MudCardContent>
                 <MudCardActions>
-                    <MudText Align="Align.Center" Class="mb-2">
+                    <MudText Align="Align.Center" Class="mb-2 cuestion-color">
                         Already have an account?
                         <MudLink Href="/identity/account/login">Sign in</MudLink>
                     </MudText>

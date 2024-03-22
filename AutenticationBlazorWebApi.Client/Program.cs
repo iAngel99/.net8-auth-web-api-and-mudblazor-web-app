@@ -44,9 +44,13 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<GetHttpClient>();
+builder.Services.AddScoped<CustomAuthenticationStateProvider>();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 builder.Services.AddScoped<IUserAccountService, UserAccountService>();
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+
 
 builder.Services.AddCors(options =>
 {

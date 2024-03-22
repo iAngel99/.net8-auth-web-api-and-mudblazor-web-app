@@ -2,17 +2,25 @@
 
 namespace AutenticationBlazorWebApi.Models.DTOs
 {
-    public class UserDto : LoginDto
+    public class UserDto
     {
+        [Key]
+        public string Id { get; set; }
+
         [Required(ErrorMessage = "El Nombre es requerido")]
+        [Display(Name = "Nombre")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessage = "El Apellido es requerido")]
+        [Display(Name = "Apellido")]
         public string LastName { get; set; }
 
-        [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "La contraseña y confirmación de contraseña no coinciden")]
-        public string ConfirmPassword { get; set; }
+        [Required(ErrorMessage = "Email requerido")]
+        [Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "El Email no es válido")]
+        public string Email { get; set; }
+
+        public ICollection<UserRoleDto>? UserRole { get; set; }
+
     }
 }

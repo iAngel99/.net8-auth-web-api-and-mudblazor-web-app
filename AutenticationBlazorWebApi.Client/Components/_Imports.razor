@@ -9,7 +9,11 @@
 @using AutenticationBlazorWebApi.Client
 @using AutenticationBlazorWebApi.Client.Components
 
+@using AutenticationBlazorWebApi.Server
+@using Microsoft.AspNetCore.Authorization
+
 @using AutenticationBlazorWebApi.Models.DTOs
+@using AutenticationBlazorWebApi.Models.Responses
 @using AutenticationBlazorWebApi.Client.Helpers
 @using AutenticationBlazorWebApi.Client.Services.Contracts
 @using Microsoft.AspNetCore.Components.Authorization
@@ -17,11 +21,14 @@
 
 @using AutenticationBlazorWebApi.Client.Components.Layout
 @using AutenticationBlazorWebApi.Client.Components.Pages.ComponentsPages
+@using AutenticationBlazorWebApi.Client.Components.Pages.ManagePages
 @using MudBlazor
 
 
 @inject AuthenticationStateProvider AuthenticationStateProvider
+@inject CustomAuthenticationStateProvider CustomAuthenticationStateProvider
 @inject IUserAccountService AccountService
+@inject IUserService UserService
 @inject IWeatherForecastService WeatherForecastService
 @inject NavigationManager NavManager
 @inject IHttpContextAccessor HttpContextAccessor
