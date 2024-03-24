@@ -1,0 +1,17 @@
+﻿.userContainerActions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.userContainerButtons {
+    display: flex;
+    gap: 20px;
+    direction: rtl;
+}
+.userContainerLink {
+    text-align: center;
+}
+td.mud-table-cell > div.mud-input-control.mud-input-input-control > div.mud-input-control-input-container > div.mud-input.mud-input-text.mud-input-underline.mud-shrink > input.mud-input-slot.mud-input-root.mud-input-root-text {
+    color: black!important;
+}

@@ -8,9 +8,9 @@
         <MudSnackbarProvider />
         <MudLayout>
             <MudAppBar Elevation="1">
-                <MudIconButton Icon="@(_drawerOpen ? Icons.Material.Filled.MenuOpen : Icons.Material.Filled.Menu)"
+                <MudIconButton Icon="@(_drawerOpen ? Icons.Material.Filled.MenuOpen : Icons.Material.Filled.Menu)" Title="Menu button"
                                Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())"/>
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" style="color: white" href="">
                     Hi,
                     <AuthorizeView>
                         <Authorized>@context.User.Identity!.Name</Authorized>
@@ -21,16 +21,16 @@
                 <AuthorizeView>
                     <Authorized>
                         <MudMenu TransformOrigin="Origin.TopCenter" AnchorOrigin="Origin.BottomCenter" ActivationEvent="@MouseEvent.MouseOver" Size="Size.Large"
-                                 Class="mx-11">
+                                 Class="mx11">
                             <ActivatorContent>
-                                <MudAvatar Image="images/avatar96.webp" Size="Size.Medium" Class="bg-transparent"/>
+                                <MudAvatar Image="images/avatar96.webp" Size="Size.Medium" Class="bgtransparent" Color="Color.Transparent"/>
                             </ActivatorContent>
                             <ChildContent>
                                 <MudMenuItem Icon="@Icons.Material.Outlined.ManageAccounts" IconColor="Color.Primary"
-                                             Class="text-start custom-icon-width" Href="/identity/account/user">
+                                             Class="textstart custom-icon-width" Href="/identity/account/user">
                                     Perfil
                                 </MudMenuItem>
-                                <MudMenuItem Icon="@Icons.Material.Outlined.Logout" IconColor="Color.Error" Class="text-start custom-icon-width"
+                                <MudMenuItem Icon="@Icons.Material.Outlined.Logout" IconColor="Color.Error" Class="textstart custom-icon-width"
                                              OnClick="@(() => LogoutClicked())">
                                     Cerrar
                                     Sesión
@@ -39,8 +39,8 @@
                         </MudMenu>
                     </Authorized>
                     <NotAuthorized>
-                        <MudIconButton Class="m-2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/login">Login</MudIconButton>
-                        <MudIconButton Class="m-2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/register">Register</MudIconButton>
+                        <MudIconButton Class="m2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/login">Login</MudIconButton>
+                        <MudIconButton Class="m2" Color="Color.Inherit" Edge="Edge.Start" href="identity/account/register">Register</MudIconButton>
                     </NotAuthorized>
                 </AuthorizeView>
             </MudAppBar>
@@ -48,7 +48,7 @@
                 <NavMenu/>
             </MudDrawer>
             <MudMainContent>
-                <article class="content px-4">
+                <article class="content px4">
                     @Body
                 </article>
                 <ConsentCookies/>

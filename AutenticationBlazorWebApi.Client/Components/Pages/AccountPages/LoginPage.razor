@@ -8,28 +8,28 @@
                 <MudCardHeader>
                     <CardHeaderContent>
                         <div class="d-flex flex-column align-items-center">
-                            <MudText Typo="Typo.h4" Class="mb-3" Color="Color.Info">Log In</MudText>
+                            <MudText Typo="Typo.h4" Class="mb3" Color="Color.Info">Log In</MudText>
                             <MudImage Src="/logos/login.webp" Alt="Login Icon" Elevation="25" Class="rounded-lg" Style="width: 75px; height: 75px;" />
                         </div>
                     </CardHeaderContent>
                 </MudCardHeader>
 
                 <MudCardContent Class="mudLightblue">
-                    <MudTextField Label="Email" @bind-Value="User.Email" Class="mt-3 whiteLabel" Required="true" RequiredError="Requerido" Variant="Variant.Filled">
+                    <MudTextField Label="Email" @bind-Value="User.Email" Class="mt3 whiteLabel" Required="true" RequiredError="Requerido" Variant="Variant.Filled">
                     </MudTextField>
                     <MudTextField Label="Contraseña" @bind-Value="User.Password" InputType="@PasswordInput" Adornment="Adornment.End"
                                   AdornmentIcon="@PasswordInputIcon" OnAdornmentClick="ButtonTestclick" AdornmentAriaLabel="Show Password" 
-                                  Class="mt-3 whiteLabel" Required="true" RequiredError="Requerido" Variant="Variant.Filled" AdornmentColor="Color.Info">
+                                  Class="mt3 whiteLabel" Required="true" RequiredError="Requerido" Variant="Variant.Filled" AdornmentColor="Color.Info">
                     </MudTextField>
                 </MudCardContent>
                 <MudCardActions>
-                    <MudText Align="Align.Center" Class="mb-2 cuestion-color" >
+                    <MudText Align="Align.Center" Class="mb2 cuestion-color" >
                         Don't have an account?
                         <MudLink Href="/identity/account/register">Sign Up </MudLink>
                     </MudText>
                     <MudSpacer />
                     <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary"
-                               Class="mt-auto" Style="border-radius: 10%;">Submit</MudButton>
+                               Class="mtauto" Style="border-radius: 10%;">Submit</MudButton>
                 </MudCardActions>
             @if (Errors.Length > 0)
             {

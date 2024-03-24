@@ -7,6 +7,7 @@ using AutenticationBlazorWebApi.Server.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.OData;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -79,6 +80,13 @@ builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
 
+builder.Services.AddResponseCompression(options =>
+{
+    options.Providers.Add<BrotliCompressionProvider>();
+    options.Providers.Add<GzipCompressionProvider>();
+    options.EnableForHttps = true;
+    // Add other compression providers if needed
+});
 
 builder.Services.AddScoped<IAuthManager, AuthManager>();
 
@@ -123,6 +131,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseResponseCompression();
 
 app.UseMiddleware<ExceptionMiddleware>();
 

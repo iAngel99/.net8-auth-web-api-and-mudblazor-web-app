@@ -53,8 +53,42 @@ div.mud-card-content.mudLightblue div.mud-input-control.mud-input-input-control 
     color: lightblue !important;
 }
 
+.align-items-center {
+    align-items: center;
+}
 
+.flex-column {
+    flex-direction: column;
+}
+.d-flex {
+    display: flex;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.mtauto {
+    margin-top: auto !important;
+}
+.mt3 {
+    margin-top: 1rem !important; /* Ajusta este valor según el tamaño de margen que desees */
+}
+.rounded-lg {
+    border-radius: 0.5rem !important; /* Ajusta este valor según el tamaño de borde redondeado que desees */
+}
+.mb3 {
+    margin-bottom: 1rem !important; /* Ajusta este valor según el tamaño de margen que desees */
+}
+.mb2 {
+    margin-bottom: 0.5rem !important; /* Ajusta este valor según el tamaño de margen que desees */
+}
 
 
 

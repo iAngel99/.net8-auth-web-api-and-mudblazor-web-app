@@ -1,0 +1,137 @@
+﻿@page "/manageusers"
+@inject IDialogService DialogService;
+@layout MainLayout
+
+<MudDataGrid @ref="dataGrid" T="UserDto" Items="@Users" ReadOnly="false" CanCancelEdit="true" EditMode="DataGridEditMode.Form" Striped="true"
+             EditTrigger="DataGridEditTrigger.Manual" CommittedItemChanges="dto => SaveRow(dto)" Loading="@(!Users.Any())" Bordered="true" Elevation="4"
+             Filterable="true" FilterMode="DataGridFilterMode.Simple" FilterCaseSensitivity="DataGridFilterCaseSensitivity.Default">
+    <ToolBarContent>
+        <MudButton Size="@Size.Small" OnClick="@AddNewRow" StartIcon="@Icons.Material.Outlined.Add">
+            Añadir Usuario
+        </MudButton>
+        
+        <MudSpacer />
+        <MudText Typo="Typo.h6">Tabla de Usuarios</MudText>
+        <MudSpacer /><MudSpacer />
+    </ToolBarContent>
+    <ColGroup>
+        <col style="width:40px;" />
+        <col/>
+        <col />
+        <col />
+        <col style="width: 100px;"/>
+    </ColGroup>
+    <Columns>
+        <HierarchyColumn T="UserDto" >
+        </HierarchyColumn>
+        <PropertyColumn Property="dto => dto.FirstName" Required="true" Title="Nombre">
+            <EditTemplate>
+                <MudForm Model="@context.Item" Validation="true">
+                    <MudTextField @bind-Value="@context.Item.FirstName" For="@(() => context.Item.FirstName)" Label="Nombre"
+                                  Variant="Variant.Outlined"/>
+                </MudForm>
+            </EditTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="dto => dto.LastName" Required="true" Title="Apellido">
+            <EditTemplate>
+                <MudForm Model="@context.Item" Validation="true">
+                    <MudTextField @bind-Value="@context.Item.LastName" For="@(() => context.Item.LastName)" Label="Apellido"
+                                  Variant="Variant.Outlined"/>
+                </MudForm>
+            </EditTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="dto => dto.Email" Required="true" Title="Email">
+            <EditTemplate>
+                <MudForm Model="@context.Item" Validation="true">
+                    <MudTextField @bind-Value="@context.Item.Email" For="@(() => context.Item.Email)" Label="Email"
+                                  Variant="Variant.Outlined"/>
+                </MudForm>
+            </EditTemplate>
+        </PropertyColumn>
+        <TemplateColumn IsEditable="false" CellClass="d-flex justify-end" ShowColumnOptions="false" ShowFilterIcon="false" Sortable="false">
+            <CellTemplate>
+                <MudStack Row>
+                    <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" OnClick="@context.Actions.StartEditingItemAsync"/>
+                    <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Password" Title="Cambiar contraseña"
+                                   OnClick="@(() => CambiarContraseña(context.Item))"/>
+                    <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Delete" OnClick="@(() => DeleteRow(context.Item))"/>
+                </MudStack>
+            </CellTemplate>
+        </TemplateColumn>
+
+    </Columns>
+    <ChildRowContent>
+        <MudDataGrid @ref="roleGrid" T="UserRoleDto" Items="@context.Item.UserRole"  ReadOnly="false" Striped="true" Bordered="true" Elevation="4"
+                     EditMode="DataGridEditMode.Form" CommittedItemChanges="dto => SaveRoleRow(dto,context.Item.Id)" CanCancelEdit="true"
+                     EditTrigger="DataGridEditTrigger.Manual" Style="width: 90%;">
+            <ToolBarContent>
+                @if (context.Item.UserRole.Count < 2)
+                {
+                    <MudButton Size="@Size.Small" OnClick="@(()=> AddNewRole(context.Item.Id))" StartIcon="@Icons.Material.Outlined.Add">
+                        Añadir Role
+                    </MudButton>
+                }
+                <MudSpacer/>
+                <MudText Typo="Typo.h6">Roles</MudText>
+                <MudSpacer/><MudSpacer/>
+            </ToolBarContent>
+            <ColGroup>
+                <col />
+                <col style="width:40px;" />
+            </ColGroup>
+            <Columns>
+                <PropertyColumn Property="dto => dto.Role.Name" Title="Nombre" ShowColumnOptions="false" ShowFilterIcon="false">
+                    <EditTemplate Context="roleContext">
+                        <MudSelect @bind-Value="@roleContext.Item.Role.Name" Required RequiredError="Debes seleccionar un Rol" Margin="@Margin.Dense">
+                            @{
+                                var availableRoles = rolesList.Where(s => !context.Item.UserRole.Select(r => r.Role.Name).Contains(s));
+                                var firstAvailableRole = availableRoles.FirstOrDefault();
+                                if (firstAvailableRole != null)
+                                {
+                                    roleContext.Item.Role.Name = firstAvailableRole;
+                                }
+                            }
+                            @foreach (string role in availableRoles)
+                            {
+                                <MudSelectItem Value="role">@role</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </EditTemplate>
+                </PropertyColumn>
+                
+                <TemplateColumn IsEditable="false" CellClass="d-flex justify-end" ShowColumnOptions="false" ShowFilterIcon="false" Sortable="false">
+                    <CellTemplate Context="roleContext">
+                        <MudStack Row>
+                            <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Delete" OnClick="@(() => DeleteRole(roleContext.Item))"/>
+                        </MudStack>
+                    </CellTemplate>
+                </TemplateColumn>
+            </Columns>
+        </MudDataGrid>
+    </ChildRowContent>
+    <PagerContent>
+        <MudDataGridPager T="UserDto" />
+    </PagerContent>
+    <LoadingContent>
+        <div class="Myoverlay">
+            <div class="dot-spinner">
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+            </div>
+        </div>
+    </LoadingContent>
+</MudDataGrid>
+@if (string.IsNullOrEmpty(Message))
+{
+    <MudAlert Severity="Severity.Normal"></MudAlert>
+}
+@if (Message.Length > 0)
+{
+    <MudAlert Severity="Severity.Error">@Message</MudAlert>
+}

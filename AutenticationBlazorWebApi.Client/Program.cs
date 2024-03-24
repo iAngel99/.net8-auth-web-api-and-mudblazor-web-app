@@ -5,7 +5,9 @@ using AutenticationBlazorWebApi.Client.Services.Implementations;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.ResponseCompression;
 using MudBlazor.Services;
+using System.IO.Compression;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,6 +53,17 @@ builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 
+// Enable response compression
+builder.Services.AddResponseCompression(options =>
+{
+    options.EnableForHttps = true;
+});
+
+// Configure Brotli compression
+builder.Services.Configure<BrotliCompressionProviderOptions>(options =>
+{
+    options.Level = CompressionLevel.Fastest;
+});
 
 builder.Services.AddCors(options =>
 {
@@ -77,6 +90,8 @@ app.UseStaticFiles();
 app.UseCors("AllowAll");
 
 app.UseCookiePolicy();
+
+app.UseResponseCompression();
 
 app.UseRouting();
 app.UseAuthentication();

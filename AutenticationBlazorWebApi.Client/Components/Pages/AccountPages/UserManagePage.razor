@@ -1,0 +1,70 @@
+﻿@page "/identity/account/user"
+@layout AuthenticationLayout
+
+@attribute [Authorize]
+@attribute [StreamRendering]
+
+<div class="centered-container">
+    <div class="container-color">
+        @if (Show)
+        {
+            <EditForm Model="@User" OnValidSubmit="HandleUserChange">
+                <DataAnnotationsValidator />
+                <MudCard Class="mudContainer" Elevation="100">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <div class="d-flex flex-column align-items-center">
+                                <MudText Typo="Typo.h4" Class="mb3" Color="Color.Info">Modificar Usuario</MudText>
+                                <MudImage Src="/logos/register.webp" Alt="Login Icon" Elevation="25" Class="rounded-lg" Style="width: 75px; height: 75px;" />
+                            </div>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+
+                    <MudCardContent Class="mudLightblue">
+                        <MudTextField Label="Nombre" @bind-Value="User.FirstName" Class="mt3 whiteLabel"
+                                      For="@(() => User.FirstName)">
+                        </MudTextField>
+                        <MudTextField Label="Apellido" @bind-Value="User.LastName" Class="mt3 whiteLabel"
+                                      For="@(() => User.LastName)">
+                        </MudTextField>
+                        <MudTextField Label="Email" @bind-Value="User.Email" Class="mt3 whiteLabel"
+                                      For="@(() => User.Email)">
+                        </MudTextField>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <div class="userContainerActions">
+                            <div class="userContainerLink">
+                                <MudLink Class="mb2" @onclick="ChangePasswordAction">Cambiar Contraseña</MudLink>
+                            </div>
+                            <div class="userContainerButtons">
+                                <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Error"
+                                           Class="mtauto" Style="border-radius: 10%;" @onclick="Cancel">Cancelar</MudButton>
+                                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary"
+                                           Class="mtauto" Style="border-radius: 10%;">Submit</MudButton>
+
+                            </div>
+                        </div>
+                    </MudCardActions>
+                    @if (string.IsNullOrEmpty(Message) && string.IsNullOrEmpty(Errors))
+                    {
+                        <MudAlert Severity="Severity.Normal"></MudAlert>
+                    }
+                    @if (Message.Length > 0)
+                    {
+                        <MudAlert Severity="Severity.Success">@Message</MudAlert>
+                    }
+                    @if (Errors.Length > 0)
+                    {
+                        <MudAlert Severity="Severity.Error">@Errors</MudAlert>
+                    }
+
+                </MudCard>
+            </EditForm>
+        }
+        else
+        {
+            <ChangePasswordPage OnCancel="ChangePasswordAction" />
+        }
+    </div>
+</div>
+
