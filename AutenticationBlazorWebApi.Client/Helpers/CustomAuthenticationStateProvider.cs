@@ -1,5 +1,6 @@
-﻿using AutenticationBlazorWebApi.Client.States;
+﻿using AutenticationBlazorWebApi.Client.Services;
 using AutenticationBlazorWebApi.Models.DTOs;
+using AutenticationBlazorWebApi.Models.Responses;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -9,13 +10,19 @@ namespace AutenticationBlazorWebApi.Client.Helpers
     public class CustomAuthenticationStateProvider : AuthenticationStateProvider
     {
         private readonly ClaimsPrincipal anonymous = new(new ClaimsIdentity());
+        private readonly IUserSession _userSession;
+
+        public CustomAuthenticationStateProvider(IUserSession userSession)
+        {
+            _userSession = userSession;
+        }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
             try
             {
                 // Obtener el token
-                var stringToken = MainStates.JwtToken;
+                var stringToken = _userSession.GetUserData<string>("Token");
 
                 // Si el token es nulo o vacío, devolver un estado de autenticación anónimo
                 if (string.IsNullOrEmpty(stringToken)) return await Task.FromResult(new AuthenticationState(anonymous));
@@ -50,15 +57,11 @@ namespace AutenticationBlazorWebApi.Client.Helpers
             var claimsPrincipal = new ClaimsPrincipal();
             if (userSession.Token != null || userSession.RefreshToken != null)
             {
-                var serializeSession = Serializations.SerializeObj(userSession);
-                MainStates.JwtToken = serializeSession;
+
                 var getUserClaims = DecryptToken(userSession.Token!);
                 claimsPrincipal = SetClaimPrincipal(getUserClaims);
             }
-            else
-            {
-                MainStates.JwtToken = null!;
-            }
+
 
             NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(claimsPrincipal)));
         }
@@ -98,6 +101,12 @@ namespace AutenticationBlazorWebApi.Client.Helpers
                     new(ClaimTypes.GivenName,claims.GivenName),
                     new(ClaimTypes.Role, claims.Role)
                 }, "JwtAuth"));
+        }
+
+        public void CheckStates()
+        {
+            var userLogin = _userSession.GetUserData<LoginResponse>("LoginResponse");
+
         }
 
     }

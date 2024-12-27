@@ -12,6 +12,8 @@ namespace AutenticationBlazorWebApi.Client.Components.Pages.AccountPages
         bool isShow;
         InputType PasswordInput = InputType.Password;
         string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+        protected bool IsAuth { get; set; } = false;
+        public string JwtToken { get; set; } = "";
 
         protected override async Task OnInitializedAsync()
         {
@@ -23,6 +25,18 @@ namespace AutenticationBlazorWebApi.Client.Components.Pages.AccountPages
             {
                 // Redirige al usuario a la página de inicio o al panel de control, por ejemplo.
                 NavManager.NavigateTo("/", forceLoad: true);
+            }
+        }
+
+        protected override void OnAfterRender(bool firstRender)
+        {
+            if (IsAuth)
+            {
+                _userSession.SetUserData("Token", JwtToken);
+                var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
+                customAuthStateProvider.CheckStates();
+                NavManager.NavigateTo("/", forceLoad: true);
+
             }
         }
 
@@ -52,8 +66,10 @@ namespace AutenticationBlazorWebApi.Client.Components.Pages.AccountPages
             if (result.Flag)
             {
                 var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthenticationStateProvider;
-                await customAuthStateProvider.UpdateAuthenticationState(new AuthResponseDto() { Token = result.Token, RefreshToken = result.RefreshToken });
-                NavManager.NavigateTo("/", forceLoad: true);
+                var userSession = new AuthResponseDto() { Token = result.Token, RefreshToken = result.RefreshToken };
+                await customAuthStateProvider.UpdateAuthenticationState(userSession);
+                IsAuth = true;
+                JwtToken = Serializations.SerializeObj(userSession); ;
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿using AutenticationBlazorWebApi.Client.States;
+﻿using AutenticationBlazorWebApi.Client.Services;
 using AutenticationBlazorWebApi.Models.DTOs;
 
 namespace AutenticationBlazorWebApi.Client.Helpers
@@ -6,11 +6,13 @@ namespace AutenticationBlazorWebApi.Client.Helpers
     public class GetHttpClient
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IUserSession _userSession;
         private const string HeaderKey = "Authorization";
 
-        public GetHttpClient(IHttpClientFactory httpClientFactory)
+        public GetHttpClient(IHttpClientFactory httpClientFactory, IUserSession userSession)
         {
             _httpClientFactory = httpClientFactory;
+            _userSession = userSession;
         }
 
 
@@ -20,7 +22,7 @@ namespace AutenticationBlazorWebApi.Client.Helpers
             var client = _httpClientFactory.CreateClient("SystemApiClient");
 
             // Obtener el token del almacenamiento local
-            var stringToken = MainStates.JwtToken;
+            var stringToken = _userSession.GetUserData<string>("Token");
 
             // Si el token es nulo o vacío, devolver el cliente
             if (String.IsNullOrEmpty(stringToken)) return client;

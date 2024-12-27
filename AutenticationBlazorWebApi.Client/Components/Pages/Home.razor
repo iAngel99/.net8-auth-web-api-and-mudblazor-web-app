@@ -6,4 +6,15 @@
 
 Welcome to your new app.
 
+@code
+{
+    protected override void OnInitialized()
+    {
+        var tk=_userSession.GetUserData<string>("Token");
+        if (string.IsNullOrEmpty(tk))
+        {
+            _userSession.SetUserData("d", "d");
+        }
 
+    }
+}

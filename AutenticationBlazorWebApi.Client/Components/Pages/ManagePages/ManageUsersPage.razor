@@ -1,6 +1,7 @@
 ﻿@page "/manageusers"
 @inject IDialogService DialogService;
 @layout MainLayout
+@attribute [Authorize(Roles = "Administrator")]
 
 <MudDataGrid @ref="dataGrid" T="UserDto" Items="@Users" ReadOnly="false" CanCancelEdit="true" EditMode="DataGridEditMode.Form" Striped="true"
              EditTrigger="DataGridEditTrigger.Manual" CommittedItemChanges="dto => SaveRow(dto)" Loading="@(!Users.Any())" Bordered="true" Elevation="4"

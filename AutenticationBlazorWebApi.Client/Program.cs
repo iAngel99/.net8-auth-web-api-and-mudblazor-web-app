@@ -1,5 +1,6 @@
 using AutenticationBlazorWebApi.Client.Components;
 using AutenticationBlazorWebApi.Client.Helpers;
+using AutenticationBlazorWebApi.Client.Services;
 using AutenticationBlazorWebApi.Client.Services.Contracts;
 using AutenticationBlazorWebApi.Client.Services.Implementations;
 using Blazored.LocalStorage;
@@ -16,6 +17,19 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+    options.Cookie.SameSite = SameSiteMode.Lax;
+});
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IUserSession, UserSession>();
+
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", options =>
 {
@@ -31,7 +45,7 @@ builder.Services.AddAuthentication(options =>
     .AddCookie(options =>
     {
         options.LoginPath = "/identity/account/login";
-        options.AccessDeniedPath = "/identity/account/login";
+        options.AccessDeniedPath = "/accessDenied";
     });
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
@@ -43,7 +57,7 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
         Name = "myconsent"
     };
 });
-builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<GetHttpClient>();
 builder.Services.AddScoped<CustomAuthenticationStateProvider>();
@@ -70,12 +84,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll", b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 });
 
-builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddMudServices();
 
 var app = builder.Build();
-
+app.UseSession();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

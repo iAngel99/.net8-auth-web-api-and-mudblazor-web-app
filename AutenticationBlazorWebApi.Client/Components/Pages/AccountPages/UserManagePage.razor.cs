@@ -1,5 +1,4 @@
 ﻿using AutenticationBlazorWebApi.Client.Helpers;
-using AutenticationBlazorWebApi.Client.States;
 using AutenticationBlazorWebApi.Models.DTOs;
 using System.Security.Claims;
 
@@ -44,7 +43,7 @@ namespace AutenticationBlazorWebApi.Client.Components.Pages.AccountPages
                 Message = result.Message;
 
                 // Obtener el token
-                var stringToken = MainStates.JwtToken;
+                var stringToken = _userSession.GetUserData<string>("Token"); ;
 
 
                 // Deserializar el token en un objeto UserSession

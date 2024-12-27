@@ -1,5 +1,5 @@
-﻿using AutenticationBlazorWebApi.Client.Services.Contracts;
-using AutenticationBlazorWebApi.Client.States;
+﻿using AutenticationBlazorWebApi.Client.Services;
+using AutenticationBlazorWebApi.Client.Services.Contracts;
 using AutenticationBlazorWebApi.Models.DTOs;
 using System.Net;
 using System.Net.Http.Headers;
@@ -9,11 +9,12 @@ namespace AutenticationBlazorWebApi.Client.Helpers
     public class CustomHttpHandler : DelegatingHandler
     {
         private readonly IUserAccountService _userAccountService;
+        private readonly IUserSession _userSession;
 
-        public CustomHttpHandler(IUserAccountService userAccountService)
+        public CustomHttpHandler(IUserAccountService userAccountService, IUserSession userSession)
         {
-
             _userAccountService = userAccountService;
+            _userSession = userSession;
         }
 
         protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
@@ -30,7 +31,7 @@ namespace AutenticationBlazorWebApi.Client.Helpers
                 try
                 {
                     // Get token from localStorage
-                    var stringtoken = MainStates.JwtToken;
+                    var stringtoken = _userSession.GetUserData<string>("Token"); ;
                     if (stringtoken == null) return result;
                     // Check if the header contain token
                     string token = string.Empty;
@@ -70,7 +71,7 @@ namespace AutenticationBlazorWebApi.Client.Helpers
         {
             var result = await _userAccountService.RefreshToken(tokenDto);
             string serializedToken = Serializations.SerializeObj(result);
-            MainStates.JwtToken = serializedToken;
+            _userSession.SetUserData("Token", serializedToken);
             return result.Token;
         }
     }

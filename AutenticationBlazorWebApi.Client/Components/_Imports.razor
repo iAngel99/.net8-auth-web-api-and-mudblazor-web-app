@@ -22,9 +22,10 @@
 @using AutenticationBlazorWebApi.Client.Components.Layout
 @using AutenticationBlazorWebApi.Client.Components.Pages.ComponentsPages
 @using AutenticationBlazorWebApi.Client.Components.Pages.ManagePages
+@using AutenticationBlazorWebApi.Client.Services
 @using MudBlazor
 
-
+@inject IUserSession _userSession
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject CustomAuthenticationStateProvider CustomAuthenticationStateProvider
 @inject IUserAccountService AccountService

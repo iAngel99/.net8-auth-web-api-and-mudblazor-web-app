@@ -228,8 +228,7 @@ namespace AutenticationBlazorWebApi.Server.Migrations
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasMaxLength(34)
-                        .HasColumnType("nvarchar(34)")
-                        .HasDefaultValue("IdentityUserRole<string>");
+                        .HasColumnType("nvarchar(34)");
 
                     b.HasKey("UserId", "RoleId");
 
